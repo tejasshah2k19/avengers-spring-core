@@ -1,0 +1,47 @@
+core , web , boot 
+
+
+
+1) core  - primary 
+2) context - container create 
+3) bean - class [ memory allocation ]  
+4) el - expression lang  
+
+
+maven -> jar -> pom.xml 
+
+mvn repo -> spring core , context 
+
+what is spring bean ? 
+	A class who's memory allocation and deallocation managed by spring [ IoC container ]
+	
+	
+	adv java 			vs 		spring 
+	ServletContainer			IoC container 
+	web.xml						spring.xml 
+	Servlet 					Spring Bean 
+	
+	 
+can we add jar manually ?
+yes we can 
+  
+context.jar --> el.jar jcl.jar 
+	5.3.2		5.2	    2.2 
+
+if we use maven all things are handle by maven.
+
+mvnrepository.com -> spring-core.jar -> download -> c:\Users\tejas\.m2\repository\org\springframework\core\5.3.2\ core.jar 
+
+maven -> 3 jar 
+1) local repo  - computer 
+2) remote repo - company server# 
+3) central repo - mvnrepository.com 
+
+-----------------------------------------------------------------------------------
+
+
+
+	
+	
+	
+	
