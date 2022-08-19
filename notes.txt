@@ -38,10 +38,17 @@ maven -> 3 jar
 3) central repo - mvnrepository.com 
 
 -----------------------------------------------------------------------------------
+spring.xml
 
 
-
-	
+				IOC container 
+	BeanFactory 				ApplicationContext 				
+										*FileSystemXmlApplicationContext
+										*ClasspathXmlApplicationContext 
+										*WebXmlApplicationContext 
+										
+										
+				
 	
 	
 	
