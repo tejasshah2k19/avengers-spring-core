@@ -4,6 +4,8 @@
 	xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean class="com.dao.UserDao" id="userDao"></bean>
+	<bean class="com.dao.UserDao" id="userDao">
+	 <property name="dbName"  value="springDb"></property>
+	</bean>
 
 </beans>
