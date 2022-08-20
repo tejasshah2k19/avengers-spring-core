@@ -8,6 +8,10 @@ public class UserBean {
 
 	RoleBean role;
 
+	public UserBean(RoleBean role) {
+		this.role = role;
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -38,6 +42,10 @@ public class UserBean {
 
 	public void setRole(RoleBean role) {
 		this.role = role;
+	}
+
+	public void def() {
+		System.out.println("UserBean Init....");
 	}
 
 }

@@ -11,6 +11,9 @@ public class RoleBean {
 	public void setRoleName(String roleName) {
 		this.roleName = roleName;
 	}
-	
-	
+
+	public void abcd() {
+		System.out.println("role init...");
+	}
+
 }

@@ -2,10 +2,23 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	default-init-method="abcd" default-destroy-method="destroy">
 
 	<bean class="com.dao.UserDao" id="userDao">
-	 <property name="dbName"  value="springDb"></property>
+		<property name="dbName" value="springDb"></property>
 	</bean>
 
+	<bean class="com.bean.RoleBean" id="role">
+		<property name="roleName" value="admin"></property>
+	</bean>
+
+	<bean class="com.bean.UserBean" id="user" init-method="def">
+
+		<property name="firstName" value="ram"></property>
+		<property name="email" value="ram@gmail.com"></property>
+		<property name="password" value="ram123"></property>
+		<constructor-arg ref="role"></constructor-arg>
+
+	</bean>
 </beans>

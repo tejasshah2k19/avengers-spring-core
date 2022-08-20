@@ -48,6 +48,26 @@ spring.xml
 										*WebXmlApplicationContext 
 										
 										
+										
+										
+										
+UserBean{role}
+
+RoleBean 
+
+new UserBean -> role present 
+
+1) constructor injection [ comp ] 
+2) setter injection     [ optional ] 
+
+										
+										
+										
+										
+										
+										
+										
+										
 				
 	
 	

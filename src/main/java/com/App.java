@@ -24,7 +24,9 @@ public class App {
 		System.out.println(userDao1);
 		System.out.println(userDao2);
 		System.out.println(userDao3);
-		
+
 		System.out.println(userDao1.getDbName());
+
+		context.registerShutdownHook();// shut down
 	}
 }

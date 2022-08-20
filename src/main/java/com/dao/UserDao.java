@@ -1,4 +1,5 @@
 package com.dao;
+
 //spring bean 
 public class UserDao {
 
@@ -11,6 +12,14 @@ public class UserDao {
 	public void setDbName(String dbName) {
 		this.dbName = dbName;
 	}
+
+	public void abcd() {
+		System.out.println("userDao init");
+
+	}
 	
-	
+	public void destroy() {
+		System.out.println("destroy -- userDao");
+	}
+
 }
